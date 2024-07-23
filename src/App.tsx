@@ -1,5 +1,6 @@
 import "./App.css";
 import Login from "./component/Login";
+import Register from "./component/Register";
 
 function App() {
   return (
@@ -8,7 +9,8 @@ function App() {
         <h1 className="title">Hello, React!</h1>
         <button className="button">Click Me</button>
       </div> */}
-      <Login />
+      {/* <Login /> */}
+      <Register />
     </div>
   );
 }
