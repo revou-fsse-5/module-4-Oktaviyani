@@ -1,6 +1,7 @@
 import "./App.css";
-import Login from "./component/Login";
-import Register from "./component/Register";
+// import Login from "./component/Login";
+// import Register from "./component/Register";
+import TodoList from "./component/TodoList";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
         <button className="button">Click Me</button>
       </div> */}
       {/* <Login /> */}
-      <Register />
+      {/* <Register /> */}
+      <TodoList />
     </div>
   );
 }
