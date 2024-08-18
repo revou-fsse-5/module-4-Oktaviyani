@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import RegisterForm from "./RegisterForm";
 import PersonalInformation from "./PersonalInformation";
 import AddressInformation from "./AddressInformation";
-import WelcomeNewMember from "./WelcomeNewMember";
 
 const Register: React.FC = () => {
   const [step, setStep] = useState(1);
