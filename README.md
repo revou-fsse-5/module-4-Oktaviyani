@@ -1,4 +1,11 @@
-<<<<<<< HEAD
+#Finish Assignment for Module by Okta :cat: :dog:
+
+## Here the link for the project
+https://scintillating-dango-462512.netlify.app
+
+## Link to the project: https://scintillating-dango-462512.netlify.app
+
+ ----------------------------------------------------------------------------------------------------------------------------------
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -45,6 +52,4 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-=======
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/aNIKLVFm)
->>>>>>> 418b614b54d226d44aec3ff127a2147e314573c0
