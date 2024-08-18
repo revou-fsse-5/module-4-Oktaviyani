@@ -2,89 +2,116 @@ import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
-interface RegisterFormProps {
-  onSubmit: (values: { email: string; password: string; confirmPassword: string }) => void;
+interface AddressInfoFormValues {
+  streetAddress: string;
+  city: string;
+  state: string;
+  zipCode: string;
 }
 
-const RegisterForm: React.FC<RegisterFormProps> = ({ onSubmit }) => {
-  const initialValues = {
-    email: "",
-    password: "",
-    confirmPassword: "",
+interface AddressInformationProps {
+  onSubmit: (values: AddressInfoFormValues) => void;
+}
+
+const AddressInformation: React.FC<AddressInformationProps> = ({ onSubmit }) => {
+  const initialValues: AddressInfoFormValues = {
+    streetAddress: "",
+    city: "",
+    state: "",
+    zipCode: "",
   };
 
   const validationSchema = Yup.object({
-    email: Yup.string().email("Invalid email address").required("Required"),
-    password: Yup.string().min(6, "Password must be at least 6 characters").required("Required"),
-    confirmPassword: Yup.string()
-      .oneOf([Yup.ref("password"), undefined], "Passwords must match")
-      .required("Required"),
+    streetAddress: Yup.string().required("Street Address is required"),
+    city: Yup.string().required("City is required"),
+    state: Yup.string().required("State is required"),
+    zipCode: Yup.string()
+      .matches(/^\d{5}(-\d{4})?$/, "Invalid Zip Code format")
+      .required("Zip Code is required"),
   });
 
   return (
     <Formik
       initialValues={initialValues}
       validationSchema={validationSchema}
-      onSubmit={(values, { setSubmitting }) => {
-        onSubmit(values);
-        setSubmitting(false);
+      onSubmit={(values) => {
+        onSubmit(values); // Call onSubmit passed from props
       }}
     >
       {({ isSubmitting }) => (
         <Form className="space-y-6">
           <div>
             <label
-              htmlFor="email"
+              htmlFor="streetAddress"
               className="block text-sm font-medium text-gray-700"
             >
-              Email
+              Street Address
             </label>
             <Field
-              id="email"
-              name="email"
-              type="email"
+              id="streetAddress"
+              name="streetAddress"
+              type="text"
               className="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
             />
             <ErrorMessage
-              name="email"
+              name="streetAddress"
               component="div"
               className="text-red-500 text-sm mt-1"
             />
           </div>
           <div>
             <label
-              htmlFor="password"
+              htmlFor="city"
               className="block text-sm font-medium text-gray-700"
             >
-              Password
+              City
             </label>
             <Field
-              id="password"
-              name="password"
-              type="password"
+              id="city"
+              name="city"
+              type="text"
               className="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
             />
             <ErrorMessage
-              name="password"
+              name="city"
               component="div"
               className="text-red-500 text-sm mt-1"
             />
           </div>
           <div>
             <label
-              htmlFor="confirmPassword"
+              htmlFor="state"
               className="block text-sm font-medium text-gray-700"
             >
-              Confirm Password
+              State
             </label>
             <Field
-              id="confirmPassword"
-              name="confirmPassword"
-              type="password"
+              id="state"
+              name="state"
+              type="text"
               className="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
             />
             <ErrorMessage
-              name="confirmPassword"
+              name="state"
+              component="div"
+              className="text-red-500 text-sm mt-1"
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="zipCode"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Zip Code
+            </label>
+            <Field
+              id="zipCode"
+              name="zipCode"
+              type="text"
+              className="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            />
+            <ErrorMessage
+              name="zipCode"
               component="div"
               className="text-red-500 text-sm mt-1"
             />
@@ -95,7 +122,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({ onSubmit }) => {
               disabled={isSubmitting}
               className="flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
-              Register
+              Submit
             </button>
           </div>
         </Form>
@@ -104,4 +131,4 @@ const RegisterForm: React.FC<RegisterFormProps> = ({ onSubmit }) => {
   );
 };
 
-export default RegisterForm;
+export default AddressInformation;
