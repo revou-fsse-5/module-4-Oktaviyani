@@ -1,0 +1,87 @@
+{
+  "users": [
+    {
+      "id": "ac88",
+      "name": "tes",
+      "email": "tes@tes.com",
+      "address": {
+        "street": "jalan",
+        "city": "kota",
+        "state": "negara",
+        "zip": "123456"
+      }
+    },
+    {
+      "id": "8636",
+      "name": "nama",
+      "email": "email@email.com",
+      "password": "password",
+      "address": {
+        "street": "jalannan",
+        "city": "kotaaan",
+        "state": "negaran",
+        "zip": "123456"
+      }
+    },
+    {
+      "id": "15fc",
+      "name": "tes1",
+      "email": "tes1@tes.com",
+      "password": "000000",
+      "birthdate": "2009-02-28",
+      "address": {
+        "street": "jalan",
+        "city": "kotaaaw",
+        "state": "japan",
+        "zip": "123456"
+      }
+    },
+    {
+      "id": "b518",
+      "name": "skuy",
+      "email": "skuy@mail.com",
+      "password": "skuy123",
+      "birthdate": "2024-08-02",
+      "address": {
+        "street": "asdfd",
+        "city": "efs",
+        "state": "sdf",
+        "zip": "12345"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Kintamani"
+    },
+    {
+      "id": "2",
+      "name": "Chihuahua"
+    },
+    {
+      "id": "3",
+      "name": "Border Collie"
+    },
+    {
+      "id": "4",
+      "name": "Dobberman"
+    },
+    {
+      "id": "3fa6",
+      "name": "Pitbull"
+    },
+    {
+      "id": "815a",
+      "name": "Labrador"
+    },
+    {
+      "id": "577b",
+      "name": "German Shepperd"
+    },
+    {
+      "id": "f931",
+      "name": "Siberian Husky"
+    }
+  ]
+}
