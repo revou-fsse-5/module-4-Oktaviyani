@@ -48,6 +48,35 @@
         "state": "sdf",
         "zip": "12345"
       }
+    },
+    {
+      "id": "b23c",
+      "personalInfo": {
+        "name": "Sweet",
+        "email": "sweet@mail.com",
+        "password": "sweet123",
+        "confirmPassword": "sweet123",
+        "birthdate": "2024-08-01"
+      },
+      "addressInfo": {
+        "street": "okk",
+        "city": "frtrt",
+        "state": "rtfsdf",
+        "zip": "123456"
+      }
+    },
+    {
+      "id": "65e9",
+      "name": "tes",
+      "email": "tes@surat.com",
+      "password": "123456",
+      "birthdate": "2024-08-02",
+      "address": {
+        "street": "dvfdv",
+        "city": "vdverv",
+        "state": "vergerg",
+        "zip": "erferfer"
+      }
     }
   ],
   "categories": [
