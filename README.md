@@ -1,5 +1,24 @@
 # Finish Assignment for Module 4 by Okta :cat: :dog:
 
+## here the newest update project link
+https://catdoglatihan.netlify.app/
+
+In this project you can login and register, and also add some category
+
+![alt text](image.png) 
+login area
+
+## multi step registration
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+
+## add categories in here
+![alt text](image-4.png)
+
+Please tell me if you want to try access it, i will let my server on.
+
+
 ## Here the link for the project
 https://scintillating-dango-462512.netlify.app
 

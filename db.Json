@@ -77,6 +77,19 @@
         "state": "vergerg",
         "zip": "erferfer"
       }
+    },
+    {
+      "id": "589d",
+      "name": "tesweb",
+      "email": "tesweb@mail.com",
+      "password": "tesweb123",
+      "birthdate": "2024-08-01",
+      "address": {
+        "street": "qweqwe",
+        "city": "qweqwe",
+        "state": "qweqwe",
+        "zip": "qweqwe"
+      }
     }
   ],
   "categories": [
@@ -111,6 +124,10 @@
     {
       "id": "f931",
       "name": "Siberian Husky"
+    },
+    {
+      "id": "4dca",
+      "name": "Anjing Kampung"
     }
   ]
 }
